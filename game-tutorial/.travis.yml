@@ -1,0 +1,16 @@
+language: cpp
+compiler:
+  - clang
+sudo: required
+dist: trusty
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libsdl2-dev libsdl2-image-dev
+
+script:
+  - cd snake
+  - mkdir Game Temp
+  - make
+  - cd ../shoot-plane
+  - mkdir Game Temp
+  - make

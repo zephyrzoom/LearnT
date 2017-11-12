@@ -1,0 +1,5 @@
+sdl2/*/[0-9]*[!.]???
+snake/Game/
+snake/Temp/
+shoot-plane/Game/
+shoot-plane/Temp/

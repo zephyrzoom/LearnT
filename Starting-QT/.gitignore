@@ -1,0 +1,4 @@
+/build-*-Debug
+*.o
+Makefile
+

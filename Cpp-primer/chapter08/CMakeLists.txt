@@ -1,0 +1,6 @@
+project(chapter08)
+set(CMAKE_CXX_STANDARD 11)
+SET(CMAKE_CXX_COMPILE clang++)
+add_executable(8.4 8.4.cpp)
+add_executable(8.5 8.5.cpp)
+add_executable(8.2 8.1.cpp 8.2.cpp)

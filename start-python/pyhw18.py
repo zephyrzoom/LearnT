@@ -1,0 +1,10 @@
+#coding=utf-8
+"""
+s=socket.socket()
+s.bind(ip,port)
+s.listen(n)
+connect,address=s.accept()
+buf=connect.recv(n)
+connect.send(buf)
+s.close()
+"""

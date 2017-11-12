@@ -1,0 +1,2 @@
+- 使用qmake出现找不到目录的在pro文件中加入QT+=widgets.
+- 生成.pro文件`qmake -project`

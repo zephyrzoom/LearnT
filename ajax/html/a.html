@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        var xmlhttp = false;
+        try {
+            xmlhttp = new ActiveXObject();
+        } catch (e) {
+
+        }
+
+        if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+            xmlhttp = new XMLHttpRequest();
+            alert("not use IE");
+        }
+
+        function makerequest(serverPage, objID) {
+            var obj = document.getElementById(objID);
+            xmlhttp.open("GET", serverPage);
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    obj.innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.send(null);
+        }
+    </script>
+</head>
+<body onload="makerequest('content1.html', 'hw')">
+<div align="center">
+    <h1>webpage</h1>
+    <a href="content1.html" onclick="makerequest('content1.html', 'hw');">page 1</a> |
+    <a href="content2.html" onclick="makerequest('content2.html', 'hw');return false;">page 2</a> |
+    <a href="content3.html" onclick="makerequest('content3.html', 'hw');return false;">page 3</a> |
+    <a href="content4.html" onclick="makerequest('content4.html', 'hw');return false;">page 4</a> |
+<div id="hw"></div>
+</div>
+</body>
+</html>

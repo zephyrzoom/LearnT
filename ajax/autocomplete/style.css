@@ -1,0 +1,70 @@
+body {
+    font-family: 宋体, 新宋体, verdana, arial, helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+
+.formclass {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    background: #a2bafa;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.autocomp {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    width: 0px;
+}
+
+.taskboxclass {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    width: 0px;
+}
+
+.calendarover {
+    text-align: center;
+    background: #cad7f9;
+    width: 15px;
+}
+
+.calendaroff {
+    text-align: center;
+    background: #a2bafa;
+    width: 15px;
+}
+
+.calendartodayover {
+    text-align: center;
+    background: #fece6e;
+    width: 15px;
+}
+
+.taskchecker {
+    width: 150px;
+    background-color: #ffbc37;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+.tcpadding {
+    padding: 10px;
+}
+
+.calendartodayoff {
+    text-align: center;
+    background: #ffbc37;
+    width: 15px;
+}
