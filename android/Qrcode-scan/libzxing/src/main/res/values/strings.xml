@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="app_name">ZXing Lib</string>
+    <string name="camera_denied_words">没有权限打开摄像头</string>
+
+</resources>
