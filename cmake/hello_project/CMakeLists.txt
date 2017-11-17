@@ -1,0 +1,4 @@
+PROJECT (HELLO C)
+ADD_SUBDIRECTORY(src bin)
+INSTALL(PROGRAMS runhello.sh DESTINATION bin)
+INSTALL(DIRECTORY doc/ DESTINATION share/doc/cmake/hello_project)
