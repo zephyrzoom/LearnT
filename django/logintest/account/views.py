@@ -1,8 +1,8 @@
-from django.contrib.auth.models import User, Permission
+from django.contrib.auth.models import User, Permission, Group
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.contrib.contenttypes.models import ContentType
 
 from .models import App
@@ -73,3 +73,55 @@ def has_view_perm(request):
     body = json.loads(request.body)
     perm = body['perm']
     return JsonResponse({'info':user.has_perm(perm),'user':user.get_username()})
+
+@permission_required('account.can view3')
+@csrf_exempt
+def test_perm(request):
+    return JsonResponse({'info':'you have can view3 permission'})
+
+@csrf_exempt
+@login_required
+def change_password(request):
+    body = json.loads(request.body)
+    old_pass = body['old_pass']
+    new_pass = body['new_pass']
+    user = request.user
+    isUser = authenticate(username=user.username, password=old_pass)
+    if isUser is not None:
+        isUser.set_password(new_pass)
+        isUser.save()
+        update_session_auth_hash(request, isUser)
+        return JsonResponse({'info':'password changed'})
+    return JsonResponse({'info':'password change error'})
+
+
+@csrf_exempt
+def add_group(request):
+    body = json.loads(request.body)
+    group_name = body['group_name']
+    isExist = Group.objects.filter(name=group_name)
+    if isExist is not None:
+        g = Group.objects.create(name=group_name)
+        g.save()
+        return JsonResponse({'info':'group name %s' % group_name})
+    return JsonResponse({'info':'group already exist'})
+
+@login_required
+@csrf_exempt
+def user_add_group(request):
+    body = json.loads(request.body)
+    group_name = body['group_name']
+    db_group = Group.objects.get(name=group_name)
+    user = request.user
+    user.groups.add(db_group)
+    return JsonResponse({'info':'added group'})
+
+@csrf_exempt
+def add_group_perm(request):
+    body = json.loads(request.body)
+    group_name = body['group_name']
+    perm = body['perm']
+    db_group = Group.objects.get(name=group_name)
+    db_perm = Permission.objects.get(codename=perm)
+    db_group.permissions.add(db_perm)
+    return JsonResponse({'info':'added group permission'})
