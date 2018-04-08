@@ -125,3 +125,4 @@ def add_group_perm(request):
     db_perm = Permission.objects.get(codename=perm)
     db_group.permissions.add(db_perm)
     return JsonResponse({'info':'added group permission'})
+
