@@ -9,10 +9,14 @@ from .models import App
 
 import json
 
+import logging
+logger = logging.getLogger(__name__)
+
 @csrf_exempt
 def register(request):
     body = json.loads(request.body)
     req_username = body['username']
+    logger.info('username %s', req_username)
     alreadyExist = User.objects.filter(username=req_username)
     if not alreadyExist:
         req_password = body['password']
