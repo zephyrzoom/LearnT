@@ -1,11 +1,13 @@
-from django.contrib.auth.models import User, Permission, Group
+from django.contrib.auth.models import Permission, Group
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.contrib.contenttypes.models import ContentType
+from django.db import transaction
+from django.db.utils import Error
 
-from .models import App
+from .models import App, MyUser, MyBackend
 
 import json
 
@@ -13,15 +15,18 @@ import logging
 logger = logging.getLogger(__name__)
 
 @csrf_exempt
+@transaction.atomic
 def register(request):
     body = json.loads(request.body)
     req_username = body['username']
-    logger.info('username %s', req_username)
-    alreadyExist = User.objects.filter(username=req_username)
+    logger.info('---------------------username %s', req_username)
+    logger.error('eeeeeeeeer')
+    alreadyExist = MyUser.objects.filter(is_active=True).filter(username=req_username)
+
     if not alreadyExist:
         req_password = body['password']
-        user = User.objects.create_user(username=req_username, password=req_password)
-        user.save()
+        MyUser.objects.create_user(username=req_username, password=req_password)
+        
         return JsonResponse({'info':'register success', 'username':req_username})
     else:
         return JsonResponse({'info':'register fail'})
@@ -67,6 +72,7 @@ def set_permission(request):
 @csrf_exempt
 def get_permission(request):
     user = request.user
+    perms = user.get_all_permissions()
     return JsonResponse({'info':list(user.get_all_permissions())})
 
 @csrf_exempt
@@ -130,3 +136,10 @@ def add_group_perm(request):
     db_group.permissions.add(db_perm)
     return JsonResponse({'info':'added group permission'})
 
+@csrf_exempt
+def uploadapp(request):
+    f = request.FILES['appfile']
+    with open('test.txt', 'wb+') as app:
+        for chunk in f.chunks():
+            app.write(chunk)
+    return JsonResponse({'info':'upload success'})

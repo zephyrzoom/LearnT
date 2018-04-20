@@ -2,8 +2,6 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.conf import settings
 from django.contrib.auth.hashers import check_password
-#from django.contrib.auth.backends import ModelBackend
-
 
 class MyUserManager(BaseUserManager):
     def create_user(self, username, password=None):
@@ -45,39 +43,6 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
     
     objects = MyUserManager()
     REQUIRED_FIELDS = []
-
-    def __str__(self):
-        return self.username
-
-    # def get_all_permissions(self, user_obj, obj=None):
-    #     if not user_obj.is_active or user_obj.is_anonymous or obj is not None:
-    #         return set()
-    #     if not hasattr(user_obj, '_perm_cache'):
-    #         user_obj._perm_cache = set()
-    #         user_obj._perm_cache.update(self.get_user_permissions(user_obj))
-    #         user_obj._perm_cache.update(self.get_group_permissions(user_obj))
-    #     return user_obj._perm_cache
-    
-    #is_superuser = False
-    
-    # def has_perm(self, perm, obj=None):
-    #     "Does the user have a specific permission?"
-    #     # Simplest possible answer: Yes, always
-    #     return True
-
-    # def has_module_perms(self, app_label):
-    #     "Does the user have permissions to view the app `app_label`?"
-    #     # Simplest possible answer: Yes, always
-    #     return True
-    
-    # def get_all_permissions(self, obj=None):
-    #     pass
-
-
-class App(models.Model):
-    app_name = models.CharField(max_length=50)
-    description = models.CharField(max_length=50)
-    myuser = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
 
 class MyBackend:
     def authenticate(self, request, username=None, password=None):

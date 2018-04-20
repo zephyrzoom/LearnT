@@ -1,0 +1,646 @@
+
+(0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT VERSION(); args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.001) SHOW FULL TABLES; args=None
+(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT VERSION(); args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.001) SHOW FULL TABLES; args=None
+(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT VERSION(); args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.001) SHOW FULL TABLES; args=None
+(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT VERSION(); args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.001) SHOW FULL TABLES; args=None
+(0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+"POST /account/register HTTP/1.1" 200 25
+(0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.001) SELECT VERSION(); args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.001) SHOW FULL TABLES; args=None
+(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+Internal Server Error: /account/register
+Traceback (most recent call last):
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.6.4_4/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "/Users/zzq7191/Documents/LearnY/django/logintest/account/views.py", line 20, in register
+    body = json.loads(request.body)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/http/request.py", line 255, in body
+    raise RawPostDataException("You cannot access body after reading from request's data stream")
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+(0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-12 09:13:38.615826' AND `django_session`.`session_key` = 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv'); args=('2018-04-12 09:13:38.615826', 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv')
+(0.002) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 3; args=(3,)
+"POST /account/register HTTP/1.1" 500 72812
+(0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.000) SELECT VERSION(); args=None
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+(0.001) SHOW FULL TABLES; args=None
+(0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+---------------------username admin3
+INFO 2018-04-12 09:25:00,730 views 75405 140735988528000 ---------------------username admin3
+INFO 2018-04-12 09:25:04,126 views 75405 140735988528000 ---------------------username admin3
+INFO 2018-04-12 09:25:08,658 views 75405 140735988528000 ---------------------username admin3
+[INFO|2018-04-12 09:26:02,650|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:04,526|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:05,203|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:05,538|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:05,741|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:05,923|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:06,104|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:06,257|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:06,831|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:06,980|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:26:07,143|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:50,700|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:51,207|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:51,819|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:52,253|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:52,775|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:53,135|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:53,359|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:53,561|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:53,750|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:53,926|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:27:54,103|views|75529|140735988528000] ---------------------username admin3
+[INFO|2018-04-12 09:29:56,298] ---------------------username admin3
+[INFO|2018-04-12 09:29:56,901] ---------------------username admin3
+[INFO|2018-04-12 09:29:57,367] ---------------------username admin3
+[INFO|2018-04-12 09:30:38,927] ---------------------username admin3
+[ERROR|2018-04-12 09:30:38,927] eeeeeeeeer
+[INFO|2018-04-12 09:30:39,875] ---------------------username admin3
+[ERROR|2018-04-12 09:30:39,875] eeeeeeeeer
+[INFO|2018-04-12 09:30:40,702] ---------------------username admin3
+[ERROR|2018-04-12 09:30:40,702] eeeeeeeeer
+[INFO|2018-04-12 09:30:41,265] ---------------------username admin3
+[ERROR|2018-04-12 09:30:41,265] eeeeeeeeer
+[INFO|2018-04-12 09:30:41,491] ---------------------username admin3
+[ERROR|2018-04-12 09:30:41,491] eeeeeeeeer
+[INFO|2018-04-12 09:30:41,676] ---------------------username admin3
+[ERROR|2018-04-12 09:30:41,676] eeeeeeeeer
+[INFO|2018-04-12 09:30:41,843] ---------------------username admin3
+[ERROR|2018-04-12 09:30:41,843] eeeeeeeeer
+[INFO|2018-04-12 09:30:42,200] ---------------------username admin3
+[ERROR|2018-04-12 09:30:42,200] eeeeeeeeer
+[INFO|2018-04-12 09:32:13,881|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:32:13,881|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:32:14,455|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:32:14,455|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:32:15,189|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:32:15,190|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:32:15,327|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:32:15,327|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:33:10,752|views|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:33:10,753|views|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:33:12,213|views|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:33:12,213|views|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:33:12,743|views|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:33:12,743|views|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:33:13,230|views|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:33:13,230|views|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:33:13,663|views|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:33:13,663|views|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:33:13,863|views|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:33:13,863|views|register|23] eeeeeeeeer
+[INFO|2018-04-12 09:33:14,071|views|register|22] ---------------------username admin3
+[ERROR|2018-04-12 09:33:14,071|views|register|23] eeeeeeeeer
+[ERROR|2018-04-12 09:34:17,236|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-12 09:34:17,236|views|register|26] ---------------------username admin3
+[ERROR|2018-04-12 09:34:17,236|views|register|27] eeeeeeeeer
+[ERROR|2018-04-12 09:34:18,060|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-12 09:34:18,060|views|register|26] ---------------------username admin3
+[ERROR|2018-04-12 09:34:18,060|views|register|27] eeeeeeeeer
+[ERROR|2018-04-12 09:34:18,549|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-12 09:34:18,549|views|register|26] ---------------------username admin3
+[ERROR|2018-04-12 09:34:18,549|views|register|27] eeeeeeeeer
+[ERROR|2018-04-12 09:34:18,697|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-12 09:34:18,697|views|register|26] ---------------------username admin3
+[ERROR|2018-04-12 09:34:18,697|views|register|27] eeeeeeeeer
+[ERROR|2018-04-12 09:34:18,891|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-12 09:34:18,891|views|register|26] ---------------------username admin3
+[ERROR|2018-04-12 09:34:18,892|views|register|27] eeeeeeeeer
+[ERROR|2018-04-12 09:34:19,778|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-12 09:34:19,778|views|register|26] ---------------------username admin3
+[ERROR|2018-04-12 09:34:19,779|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:31,042|utils|execute|111] (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+[DEBUG|2018-04-13 00:50:31,042|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:50:31,043|utils|execute|111] (0.001) SELECT VERSION(); args=None
+[DEBUG|2018-04-13 00:50:31,073|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:50:31,081|utils|execute|111] (0.007) SHOW FULL TABLES; args=None
+[DEBUG|2018-04-13 00:50:31,084|utils|execute|111] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG|2018-04-13 00:50:35,166|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:35,166|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:35,166|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:35,166|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:35,170|utils|execute|111] (0.002) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:35,171|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:50:35,645|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:35,645|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:35,645|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:35,645|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:35,646|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:35,647|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:50:35,989|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:35,989|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:35,989|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:35,990|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:35,991|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:35,992|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:50:36,180|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:36,181|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:36,181|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:36,181|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:36,182|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:36,183|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:50:36,363|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:36,363|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:36,364|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:36,364|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:36,365|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:36,366|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:50:36,535|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:36,536|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:36,536|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:36,536|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:36,537|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:36,538|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:50:36,851|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:36,851|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:36,851|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:36,851|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:36,852|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:36,853|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:50:36,991|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:50:36,991|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:50:36,991|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:50:36,992|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:50:36,992|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:50:36,994|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:52:54,718|utils|utils.py|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[DEBUG|2018-04-13 00:52:54,719|utils|utils.py|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:52:54,719|utils|utils.py|execute|111] (0.000) SELECT VERSION(); args=None
+[DEBUG|2018-04-13 00:52:54,732|utils|utils.py|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:52:54,733|utils|utils.py|execute|111] (0.001) SHOW FULL TABLES; args=None
+[DEBUG|2018-04-13 00:52:54,736|utils|utils.py|execute|111] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG|2018-04-13 00:52:56,807|utils|utils.py|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:52:56,807|views|views.py|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:52:56,808|views|views.py|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:52:56,808|views|views.py|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:52:56,809|utils|utils.py|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:52:56,810|basehttp|basehttp.py|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:52:57,150|utils|utils.py|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:52:57,150|views|views.py|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:52:57,150|views|views.py|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:52:57,150|views|views.py|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:52:57,151|utils|utils.py|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:52:57,152|basehttp|basehttp.py|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:52:57,337|utils|utils.py|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:52:57,337|views|views.py|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:52:57,337|views|views.py|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:52:57,338|views|views.py|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:52:57,338|utils|utils.py|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:52:57,339|basehttp|basehttp.py|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:52:57,485|utils|utils.py|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:52:57,486|views|views.py|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:52:57,486|views|views.py|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:52:57,486|views|views.py|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:52:57,487|utils|utils.py|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:52:57,488|basehttp|basehttp.py|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:52:57,647|utils|utils.py|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:52:57,647|views|views.py|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:52:57,647|views|views.py|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:52:57,647|views|views.py|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:52:57,648|utils|utils.py|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:52:57,649|basehttp|basehttp.py|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:54:19,777|utils|django.db.backends|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[DEBUG|2018-04-13 00:54:19,778|utils|django.db.backends|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:54:19,778|utils|django.db.backends|execute|111] (0.000) SELECT VERSION(); args=None
+[DEBUG|2018-04-13 00:54:19,790|utils|django.db.backends|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:54:19,791|utils|django.db.backends|execute|111] (0.001) SHOW FULL TABLES; args=None
+[DEBUG|2018-04-13 00:54:19,794|utils|django.db.backends|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG|2018-04-13 00:54:30,529|utils|django.db.backends|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:54:30,530|views|account.views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:54:30,530|views|account.views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:54:30,530|views|account.views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:54:30,532|utils|django.db.backends|execute|111] (0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:54:30,533|basehttp|django.server|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:55:57,979|utils|utils|django.db.backends|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[DEBUG|2018-04-13 00:55:57,980|utils|utils|django.db.backends|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:55:57,980|utils|utils|django.db.backends|execute|111] (0.000) SELECT VERSION(); args=None
+[DEBUG|2018-04-13 00:55:58,003|utils|utils|django.db.backends|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:55:58,004|utils|utils|django.db.backends|execute|111] (0.001) SHOW FULL TABLES; args=None
+[DEBUG|2018-04-13 00:55:58,007|utils|utils|django.db.backends|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG|2018-04-13 00:55:59,485|utils|utils|django.db.backends|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:55:59,485|views|views|account.views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:55:59,485|views|views|account.views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:55:59,485|views|views|account.views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:55:59,486|utils|utils|django.db.backends|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:55:59,487|basehttp|basehttp|django.server|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[DEBUG|2018-04-13 00:56:43,615|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[DEBUG|2018-04-13 00:56:43,616|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:56:43,616|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[DEBUG|2018-04-13 00:56:43,628|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[DEBUG|2018-04-13 00:56:43,629|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[DEBUG|2018-04-13 00:56:43,631|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[DEBUG|2018-04-13 00:56:45,088|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[ERROR|2018-04-13 00:56:45,088|account.views|views|register|23] name 'aaa' is not defined
+[INFO|2018-04-13 00:56:45,088|account.views|views|register|26] ---------------------username admin3
+[ERROR|2018-04-13 00:56:45,088|account.views|views|register|27] eeeeeeeeer
+[DEBUG|2018-04-13 00:56:45,089|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[INFO|2018-04-13 00:56:45,090|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 00:57:41,032|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-13 00:57:41,032|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 00:57:41,033|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-13 00:57:41,044|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 00:57:41,045|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-13 00:57:41,047|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-13 00:57:42,670|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 00:57:42,670|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 00:57:42,670|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 00:57:42,671|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 00:57:42,672|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 00:57:42,673|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 00:57:43,212|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 00:57:43,212|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 00:57:43,212|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 00:57:43,212|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 00:57:43,213|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 00:57:43,214|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 00:57:43,515|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 00:57:43,515|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 00:57:43,515|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 00:57:43,515|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 00:57:43,516|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 00:57:43,517|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 00:57:43,668|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 00:57:43,668|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 00:57:43,669|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 00:57:43,669|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 00:57:43,670|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 00:57:43,671|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 00:57:43,810|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 00:57:43,810|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 00:57:43,810|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 00:57:43,811|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 00:57:43,811|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 00:57:43,812|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:14:14,282|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-13 01:14:14,283|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:14:14,283|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-13 01:14:14,301|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:14:14,302|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-13 01:14:14,304|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-13 01:14:49,164|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:14:49,164|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:14:49,164|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:14:49,166|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:14:50,797|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:14:50,797|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:14:50,797|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:14:50,799|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:14:51,001|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:14:51,003|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:14:51,003|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:14:51,005|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:14:51,201|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:14:51,201|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:14:51,201|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:14:51,208|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:14:51,362|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:14:51,362|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:14:51,362|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:14:51,363|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:15:18,939|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-13 01:15:18,939|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:15:18,940|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-13 01:15:18,951|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:15:18,951|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-13 01:15:18,953|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-13 01:15:21,055|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:15:21,056|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:15:21,056|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:15:21,056|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:15:21,057|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 01:15:21,059|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:15:21,668|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:15:21,668|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:15:21,668|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:15:21,668|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:15:21,669|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 01:15:21,670|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:15:22,130|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:15:22,130|ERROR|account.views|views|register|23] name 'aaa' is not defined
+[2018-04-13 01:15:22,130|INFO|account.views|views|register|26] ---------------------username admin3
+[2018-04-13 01:15:22,130|ERROR|account.views|views|register|27] eeeeeeeeer
+[2018-04-13 01:15:22,131|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'admin3'; args=('admin3',)
+[2018-04-13 01:15:22,138|INFO|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 200 25
+[2018-04-13 01:18:00,256|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-13 01:18:00,257|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:18:00,257|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-13 01:18:00,268|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:18:00,269|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-13 01:18:00,271|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-13 01:18:04,395|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 01:18:04,396|ERROR|django.request|exception|handle_uncaught_exception|118] Internal Server Error: /account/register
+Traceback (most recent call last):
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.6.4_4/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "/Users/zzq7191/Documents/LearnY/django/logintest/account/views.py", line 20, in register
+    c=a+b
+NameError: name 'a' is not defined
+[2018-04-13 01:18:04,412|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-13 01:18:04.410503' AND `django_session`.`session_key` = 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv'); args=('2018-04-13 01:18:04.410503', 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv')
+[2018-04-13 01:18:04,414|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 3; args=(3,)
+[2018-04-13 01:18:04,436|ERROR|django.server|basehttp|log_message|124] "POST /account/register HTTP/1.1" 500 69180
+[2018-04-13 02:46:45,334|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-13 02:46:45,335|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:46:45,335|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-13 02:46:45,348|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:46:45,349|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-13 02:46:45,351|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-13 02:48:46,648|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-13 02:48:46,648|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:48:46,649|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-13 02:48:46,660|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:48:46,660|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-13 02:48:46,663|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-13 02:49:02,009|ERROR|django.request|exception|handle_uncaught_exception|118] Internal Server Error: /account/upload
+Traceback (most recent call last):
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'appfile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/zzq7191/Documents/LearnY/django/logintest/account/views.py", line 145, in uploadapp
+    f = request.FILES['appfile']
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'appfile'
+[2018-04-13 02:49:02,021|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:49:02,021|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-13 02:49:02.018163' AND `django_session`.`session_key` = 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv'); args=('2018-04-13 02:49:02.018163', 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv')
+[2018-04-13 02:49:02,023|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 3; args=(3,)
+[2018-04-13 02:49:02,045|ERROR|django.server|basehttp|log_message|124] "POST /account/upload HTTP/1.1" 500 73004
+[2018-04-13 02:49:44,248|ERROR|django.request|exception|handle_uncaught_exception|118] Internal Server Error: /account/upload
+Traceback (most recent call last):
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/zzq7191/Documents/py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view account.views.uploadapp didn't return an HttpResponse object. It returned None instead.
+[2018-04-13 02:49:44,257|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:49:44,258|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2018-04-13 02:49:44.255498' AND `django_session`.`session_key` = 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv'); args=('2018-04-13 02:49:44.255498', 'ntv3l01ygi0qtwudtua7o7wfw4wzjfnv')
+[2018-04-13 02:49:44,259|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 3; args=(3,)
+[2018-04-13 02:49:44,275|ERROR|django.server|basehttp|log_message|124] "POST /account/upload HTTP/1.1" 500 54011
+[2018-04-13 02:50:42,391|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-13 02:50:42,392|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:50:42,392|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-13 02:50:42,403|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-13 02:50:42,404|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-13 02:50:42,406|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-13 02:50:44,565|INFO|django.server|basehttp|log_message|124] "POST /account/upload HTTP/1.1" 200 26
+[2018-04-13 02:50:46,603|INFO|django.server|basehttp|log_message|124] "POST /account/upload HTTP/1.1" 200 26
+[2018-04-13 02:51:00,059|INFO|django.server|basehttp|log_message|124] "POST /account/upload HTTP/1.1" 200 26
+[2018-04-13 04:45:48,291|INFO|django.server|basehttp|log_message|124] "POST /account/upload HTTP/1.1" 200 26
+[2018-04-17 10:53:12,282|DEBUG|django.db.backends|utils|execute|111] (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-17 10:53:12,283|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-17 10:53:12,284|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT VERSION(); args=None
+[2018-04-17 10:53:12,300|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-17 10:53:12,305|DEBUG|django.db.backends|utils|execute|111] (0.005) SHOW FULL TABLES; args=None
+[2018-04-17 10:53:12,308|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-17 10:53:31,606|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-17 10:53:31,606|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-17 10:53:31,606|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-17 10:53:31,618|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-17 10:53:31,618|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-17 10:53:31,627|DEBUG|django.db.backends|utils|execute|111] (0.007) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-17 10:54:20,275|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-17 10:54:20,275|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-17 10:54:20,276|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-17 10:54:20,300|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-17 10:54:20,300|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-17 10:54:20,303|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-17 10:54:38,360|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+[2018-04-17 10:54:38,361|DEBUG|django.db.backends|utils|execute|111] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2018-04-17 10:54:38,361|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT @@sql_mode; args=None
+[2018-04-17 10:54:38,361|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT VERSION(); args=None
+[2018-04-17 10:54:38,388|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-17 10:54:38,390|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-17 10:54:38,391|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-17 10:54:38,392|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-17 10:54:38,408|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-17 10:54:38,414|DEBUG|django.db.backends.schema|schema|execute|108] CREATE TABLE `account_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NULL, `is_superuser` bool NOT NULL, `username` varchar(150) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(150) NOT NULL, `email` varchar(254) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL); (params None)
+[2018-04-17 10:54:38,436|DEBUG|django.db.backends|utils|execute|111] (0.021) CREATE TABLE `account_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NULL, `is_superuser` bool NOT NULL, `username` varchar(150) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(150) NOT NULL, `email` varchar(254) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL); args=None
+[2018-04-17 10:54:38,438|DEBUG|django.db.backends|utils|execute|111] (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,439|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,439|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,440|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,440|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,441|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,441|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,442|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,443|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,443|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,444|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user'; args=['account_user']
+[2018-04-17 10:54:38,444|DEBUG|django.db.backends.schema|schema|execute|108] CREATE TABLE `account_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL); (params None)
+[2018-04-17 10:54:38,455|DEBUG|django.db.backends|utils|execute|111] (0.011) CREATE TABLE `account_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL); args=None
+[2018-04-17 10:54:38,457|DEBUG|django.db.backends|utils|execute|111] (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user_groups'; args=['account_user_groups']
+[2018-04-17 10:54:38,458|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user_groups'; args=['account_user_groups']
+[2018-04-17 10:54:38,459|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user_groups'; args=['account_user_groups']
+[2018-04-17 10:54:38,459|DEBUG|django.db.backends.schema|schema|execute|108] CREATE TABLE `account_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+[2018-04-17 10:54:38,469|DEBUG|django.db.backends|utils|execute|111] (0.010) CREATE TABLE `account_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL); args=None
+[2018-04-17 10:54:38,470|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user_user_permissions'; args=['account_user_user_permissions']
+[2018-04-17 10:54:38,471|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user_user_permissions'; args=['account_user_user_permissions']
+[2018-04-17 10:54:38,471|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_user_user_permissions'; args=['account_user_user_permissions']
+[2018-04-17 10:54:38,473|DEBUG|django.db.backends.schema|schema|execute|108] CREATE TABLE `account_app` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app_name` varchar(50) NOT NULL, `description` varchar(50) NOT NULL); (params None)
+[2018-04-17 10:54:38,482|DEBUG|django.db.backends|utils|execute|111] (0.008) CREATE TABLE `account_app` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app_name` varchar(50) NOT NULL, `description` varchar(50) NOT NULL); args=None
+[2018-04-17 10:54:38,483|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'account_app'; args=['account_app']
+[2018-04-17 10:54:38,483|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_app'; args=['account_app']
+[2018-04-17 10:54:38,484|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'account_app'; args=['account_app']
+[2018-04-17 10:54:38,484|DEBUG|django.db.backends.schema|schema|execute|108] ALTER TABLE `account_user_groups` ADD CONSTRAINT `account_user_groups_user_id_14345e7b_fk_account_user_id` FOREIGN KEY (`user_id`) REFERENCES `account_user` (`id`); (params ())
+[2018-04-17 10:54:38,503|DEBUG|django.db.backends|utils|execute|111] (0.018) ALTER TABLE `account_user_groups` ADD CONSTRAINT `account_user_groups_user_id_14345e7b_fk_account_user_id` FOREIGN KEY (`user_id`) REFERENCES `account_user` (`id`); args=()
+[2018-04-17 10:54:38,503|DEBUG|django.db.backends.schema|schema|execute|108] ALTER TABLE `account_user_groups` ADD CONSTRAINT `account_user_groups_group_id_6c71f749_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+[2018-04-17 10:54:38,521|DEBUG|django.db.backends|utils|execute|111] (0.018) ALTER TABLE `account_user_groups` ADD CONSTRAINT `account_user_groups_group_id_6c71f749_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=()
+[2018-04-17 10:54:38,522|DEBUG|django.db.backends.schema|schema|execute|108] ALTER TABLE `account_user_groups` ADD CONSTRAINT account_user_groups_user_id_group_id_4d09af3e_uniq UNIQUE (`user_id`, `group_id`); (params ())
+[2018-04-17 10:54:38,533|DEBUG|django.db.backends|utils|execute|111] (0.011) ALTER TABLE `account_user_groups` ADD CONSTRAINT account_user_groups_user_id_group_id_4d09af3e_uniq UNIQUE (`user_id`, `group_id`); args=()
+[2018-04-17 10:54:38,533|DEBUG|django.db.backends.schema|schema|execute|108] ALTER TABLE `account_user_user_permissions` ADD CONSTRAINT `account_user_user_pe_user_id_cc42d270_fk_account_u` FOREIGN KEY (`user_id`) REFERENCES `account_user` (`id`); (params ())
+[2018-04-17 10:54:38,549|DEBUG|django.db.backends|utils|execute|111] (0.015) ALTER TABLE `account_user_user_permissions` ADD CONSTRAINT `account_user_user_pe_user_id_cc42d270_fk_account_u` FOREIGN KEY (`user_id`) REFERENCES `account_user` (`id`); args=()
+[2018-04-17 10:54:38,549|DEBUG|django.db.backends.schema|schema|execute|108] ALTER TABLE `account_user_user_permissions` ADD CONSTRAINT `account_user_user_pe_permission_id_66c44191_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+[2018-04-17 10:54:38,564|DEBUG|django.db.backends|utils|execute|111] (0.015) ALTER TABLE `account_user_user_permissions` ADD CONSTRAINT `account_user_user_pe_permission_id_66c44191_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=()
+[2018-04-17 10:54:38,564|DEBUG|django.db.backends.schema|schema|execute|108] ALTER TABLE `account_user_user_permissions` ADD CONSTRAINT account_user_user_permis_user_id_permission_id_48bdd28b_uniq UNIQUE (`user_id`, `permission_id`); (params ())
+[2018-04-17 10:54:38,574|DEBUG|django.db.backends|utils|execute|111] (0.010) ALTER TABLE `account_user_user_permissions` ADD CONSTRAINT account_user_user_permis_user_id_permission_id_48bdd28b_uniq UNIQUE (`user_id`, `permission_id`); args=()
+[2018-04-17 10:54:38,575|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-17 10:54:38,578|DEBUG|django.db.backends|utils|execute|111] (0.002) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('account', '0001_initial', '2018-04-17 10:54:38.576121'); args=['account', '0001_initial', '2018-04-17 10:54:38.576121']
+[2018-04-17 10:54:38,579|DEBUG|django.db.backends|utils|execute|111] (0.001) SHOW FULL TABLES; args=None
+[2018-04-17 10:54:38,580|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+[2018-04-17 10:54:38,582|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group'); args=('auth', 'group')
+[2018-04-17 10:54:38,583|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission'); args=('auth', 'permission')
+[2018-04-17 10:54:38,592|DEBUG|django.db.backends|utils|execute|111] (0.007) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3)
+[2018-04-17 10:54:38,593|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+[2018-04-17 10:54:38,594|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype'); args=('contenttypes', 'contenttype')
+[2018-04-17 10:54:38,596|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+[2018-04-17 10:54:38,597|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+[2018-04-17 10:54:38,597|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session'); args=('sessions', 'session')
+[2018-04-17 10:54:38,598|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,)
+[2018-04-17 10:54:38,599|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+[2018-04-17 10:54:38,600|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'account' AND `django_content_type`.`model` = 'user'); args=('account', 'user')
+[2018-04-17 10:54:38,601|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'account' AND `django_content_type`.`model` = 'user'); args=('account', 'user')
+[2018-04-17 10:54:38,602|DEBUG|django.db.backends|utils|execute|111] (0.000) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('account', 'user'); args=['account', 'user']
+[2018-04-17 10:54:38,603|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'account' AND `django_content_type`.`model` = 'app'); args=('account', 'app')
+[2018-04-17 10:54:38,604|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (9, 7) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(9, 7)
+[2018-04-17 10:54:38,605|DEBUG|django.db.backends|utils|execute|111] (0.000) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add user', 9, 'add_user'), ('Can change user', 9, 'change_user'), ('Can delete user', 9, 'delete_user'), ('Can add app', 7, 'add_app'), ('Can change app', 7, 'change_app'), ('Can delete app', 7, 'delete_app'); args=('Can add user', 9, 'add_user', 'Can change user', 9, 'change_user', 'Can delete user', 9, 'delete_user', 'Can add app', 7, 'add_app', 'Can change app', 7, 'change_app', 'Can delete app', 7, 'delete_app')
+[2018-04-17 10:54:38,606|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'account'; args=('account',)
+[2018-04-17 10:54:38,607|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'captcha' AND `django_content_type`.`model` = 'captchastore'); args=('captcha', 'captchastore')
+[2018-04-17 10:54:38,608|DEBUG|django.db.backends|utils|execute|111] (0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (8) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(8,)
+[2018-04-17 10:54:38,610|DEBUG|django.db.backends|utils|execute|111] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'captcha'; args=('captcha',)
