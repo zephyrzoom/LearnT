@@ -6,6 +6,7 @@ from django.contrib.auth import authenticate, login, logout, update_session_auth
 from django.contrib.contenttypes.models import ContentType
 from django.db import transaction
 from django.db.utils import Error
+from django.contrib.sessions.models import Session
 
 from .models import App, MyUser, MyBackend
 
@@ -143,3 +144,9 @@ def uploadapp(request):
         for chunk in f.chunks():
             app.write(chunk)
     return JsonResponse({'info':'upload success'})
+
+@csrf_exempt
+def getSession(requust):
+    s = Session.objects.all()
+    ss = s[0].get_decoded()
+    return JsonResponse({'info':ss})
