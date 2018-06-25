@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account.apps.AccountConfig',
     'captcha',
+    'test1.apps.Test1Config',
 ]
 
 
@@ -83,7 +84,7 @@ DATABASES = {
         'NAME': 'logintest',
         'USER': 'root',
         'PASSWORD': 'zoom707`',
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }

@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'app_cd',
         'USER': 'root',
-        'PASSWORD': 'zoom707``',
+        'PASSWORD': 'zoom707`',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
