@@ -43,6 +43,18 @@ def calc_pure_python(desired_width, max_iterations):
     # working on a fixed set of inputs.
     assert sum(output) == 33219980
 
+from functools import wraps
+def timefn(fn):
+    @wraps(fn)
+    def measure_time(*args, **kwargs):
+        t1 = time.time()
+        result = fn(*args, **kwargs)
+        t2 = time.time()
+        print ("@timefn:" + fn.__name__ + " took " + str(t2 - t1) + " seconds")
+        return result
+    return measure_time
+
+@timefn
 def calculate_z_serial_purepython(maxiter, zs, cs):
     """Calculate output list using Julia update rule"""
     output = [0] * len(zs)
@@ -55,6 +67,8 @@ def calculate_z_serial_purepython(maxiter, zs, cs):
             n += 1
         output[i] = n
     return output
+
+
 
 if __name__ == "__main__":
     # Calculate the Julia set using a pure Python solution with
