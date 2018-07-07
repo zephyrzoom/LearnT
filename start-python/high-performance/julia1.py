@@ -54,7 +54,6 @@ def timefn(fn):
         return result
     return measure_time
 
-
 @timefn
 @profile
 def calculate_z_serial_purepython(maxiter, zs, cs):
@@ -64,14 +63,9 @@ def calculate_z_serial_purepython(maxiter, zs, cs):
         n = 0
         z = zs[i]
         c = cs[i]
-        while True:
-            not_yet_escaped = abs(z) < 2 
-            iterations_left = n < maxiter 
-            if not_yet_escaped and iterations_left: 
-                z=z*z+c
-                n += 1
-            else: 
-                break
+        while n < maxiter and abs(z) < 2:
+            z = z * z + c
+            n += 1
         output[i] = n
     return output
 
