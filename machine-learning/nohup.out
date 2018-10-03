@@ -1,0 +1,8 @@
+input password:Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    a = input('input password:')
+OSError: [Errno 9] Bad file descriptor
+input password:Traceback (most recent call last):
+  File "test.py", line 1, in <module>
+    a = input('input password:')
+OSError: [Errno 9] Bad file descriptor
