@@ -1,0 +1,6 @@
+ERROR:__main__:abc
+ERROR:log test:abc
+DEBUG:log test:abc
+INFO:log test:abc
+2018-09-22 15:08:00,675 - root - INFO - asdfsdf
+2018-09-22 15:08:50,445 - boc-ml - INFO - asdfsdf

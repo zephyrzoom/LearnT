@@ -15,5 +15,6 @@ urlpatterns = [
     path('user_add_group', views.user_add_group, name='user_add_group'),
     path('add_group_perm', views.add_group_perm, name='add_group_perm'),
     path('upload', views.uploadapp, name='upload'),
-    path('get_session', views.getSession, name='get session')
+    path('get_session', views.getSession, name='get session'),
+    path('get', views.getmethod, name='get'),
 ]
