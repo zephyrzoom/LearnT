@@ -150,3 +150,18 @@ def getSession(requust):
     s = Session.objects.all()
     ss = s[0].get_decoded()
     return JsonResponse({'info':ss})
+
+@csrf_exempt
+def getmethod(request):
+    get = request.GET
+    if get:
+        try:
+            from django.utils import timezone
+            print(timezone.now())
+            print(get['a'])
+        except (KeyError):
+            print('key error')
+        
+        return JsonResponse({'info':'ok'})
+    else:
+        return JsonResponse({'info':'bad'})
