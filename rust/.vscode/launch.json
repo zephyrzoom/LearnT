@@ -7,7 +7,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Custom launch",
-            "program": "${workspaceRoot}/structs/target/debug/structs",
+            "program": "${workspaceRoot}/struct_calc_area/target/debug/struct_calc_area",
             "args":[],
             "cwd": "${workspaceFolder}",
         },
