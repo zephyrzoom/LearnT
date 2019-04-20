@@ -1,5 +1,14 @@
 from itertools import combinations
 from multiprocessing import Process
+import logging
+
+logger = logging.getLogger('__name__')
+logger.setLevel(logging.INFO)
+fh = logging.FileHandler('result.log')
+fh.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(message)s')
+fh.setFormatter(formatter)
+logger.addHandler(fh)
 
 WEIGHT1 = 1
 WEIGHT2 = 1
@@ -138,6 +147,7 @@ def main():
     ]
 
     heroes = combinations(all_heroes, 10)
+    # heroes = list(combinations(all_heroes, 10))
     # one_four = len(heroes) // 2 // 2
     # two_four = len(heroes) // 2
     # three_four = len(heroes) - one_four
@@ -158,31 +168,36 @@ def main():
     # for job in jobs:
     #     job.join()
 
-    seperate_calc(heroes)
+    # seperate_calc(heroes)
 
 def seperate_calc(heroes):
     print('*********start*********')
-    max = 0
+    max_score = 0
     max_heroes = None
     i = 0
 
     for picked in heroes:
         result = score(picked)
-        if result > max:
-            max = result
+        if result > max_score:
+            max_score = result
             max_heroes = picked
         i += 1
         if i % 10240000 == 0:
-            print(max)
-            print(i)
+            # print(max_score)
+            # print(i)
+            logger.info('max score: %s', max_score)
+            logger.info('count: %s', i)
             for hero in max_heroes:
-                print(hero)
+                # print(hero)
+                logger.info('hero: %s', hero)
             print('------------split-------------')
     
     print('===========final============')
     for hero in max_heroes:
-        print(max)
-        print(hero)
+        # print(max_score)
+        # print(hero)
+        logger.info('final hero: %s', hero)
+        logger.info('final max: %s', max_score)
 
 def score(heroes):
     result = 0
