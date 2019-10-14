@@ -15,32 +15,54 @@ fn main() {
     const MAX_POINTS: u32 = 100_000;
 
     let x = 5;
-
+    // 定义同名变量会将之前的同名变量遮盖
+    // 这种方式和mut是有区别的，必须每次都用let，每次声明后都是不易变值了
     let x = x + 1;
-
     let x = x * 2;
 
     println!("The value of x is: {}", x);
-
+    // 遮盖的方式是可以改变变量类型的，但是mut就不能改变变量类型
     let spaces = "   ";
     let spaces = spaces.len();
 
-
+    // 这里必须要设置类型
     let guess:isize = "42".parse().expect("Not a number!");
 
+    /**
+     * 四种标量：整型、浮点型、布尔和字符
+     */
+    // 整型：u表示无符号，i表示有符号
+    // 大小必须符合，有8、16、32、64、128和arch（isize、usize），arch会根据系统架构设置位数
+    // 如果整型溢出，debug模式会报溢出，但是在release模式会wrap数值。比如：u8范围是0-255，256就会变为0,257会变为1。也可以显式的调用Wrapping
     // let eight:u8 = 256;
 
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x, y, z) = tup;
+    // 数值字面值可以设置在数字后面显示设置类型，也可以用_划分长数字
+    // Decimal	        98_222
+    // Hex	            0xff
+    // Octal	        0o77
+    // Binary	        0b1111_0000
+    // Byte (u8 only)	b'A'
+    // 浮点数有两种f32和f64，默认是f64
+    let x = 2.0;
 
+    // bool有两种值，可用于if表达式
+    let t = true;
+    let f:bool = false;
+
+    // char为单引号，char为4个字节的Unicode编码
+    let c = 'z';
+
+    // 元组可以放任何类型，数量固定，声明后就不能修改了。还可以显式声明类型，tup作为一个单独元素
+    let tup: (i32, f64, u8) = (5_000, 6.4, 1u8);
+
+    // 可以通过解构来分解元组元素
+    let (x, y, z) = tup;
     println!("The value of y is: {}", y);
 
+    // 元组的元素可以通过.序号来访问
     let x: (i32, f64, u8) = (500, 6.4, 1);
-
     let five_hundred = x.0;
-
     let six_point_four = x.1;
-
     let one = x.2;
 
     let a = [1, 2, 3, 4, 5];
@@ -49,4 +71,13 @@ fn main() {
     let element = a[index];
 
     println!("The value of element is: {}", element);
+
+    // 家国梦概率计算，结论：2张，3张
+    // let one = 20.0 / (0.9 * (2.0/15.0) + 0.1);
+    // let two = 100.0 / 2.0 / (0.45 * (2.0/15.0) + 0.55);
+    let one = 20.0 / (0.1*(0.0/9.0));
+    let two = 100.0 / 2.0 / (0.55*(0.0/9.0));
+    let three = 500.0 / 3.0 / (0.53*(0.0/9.0) + 0.47);
+
+    println!("one:{},two:{},three:{}", one, two, three);
 }
