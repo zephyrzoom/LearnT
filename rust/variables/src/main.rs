@@ -65,9 +65,14 @@ fn main() {
     let six_point_four = x.1;
     let one = x.2;
 
+    // 数组必须是相同类型元素，并且数组长度固定，不可修改，数组的空间分配在栈中。需要可变长度，用vector吧
     let a = [1, 2, 3, 4, 5];
+    // 类型写在中括号中，类型和长度用分号分开
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    // 5个3的数组
+    let a = [3; 5];
     let index = 10;
-
+    // 用下标访问数组元素，当下标超出最大时，可以编译但是执行会报错panic，下标不合法是不会让你访问的，很安全
     let element = a[index];
 
     println!("The value of element is: {}", element);

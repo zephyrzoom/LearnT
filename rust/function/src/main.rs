@@ -1,5 +1,6 @@
 fn main() {
     println!("Hello, world!");
+    // 函数名用小写字母组成下划线分割
     another_function(5, 15);
     let y = 6;
     let x = {
