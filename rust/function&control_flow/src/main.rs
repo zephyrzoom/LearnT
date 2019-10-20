@@ -22,7 +22,7 @@ fn main() {
         y+1
     };
     println!("the value of x is {}", x);
-
+    
     let x = five();
     println!("the value of x is {}", x);
 
@@ -30,11 +30,16 @@ fn main() {
     println!("the value of x is {}", x);
 
     let number = 12;
+    // if后面跟条件
     if number < 5 {
         println!("condition was true");
     } else {
         println!("condition was false");
     }
+    // if条件必须是bool类型
+    // if number {
+    //     println!("number was three");
+    // }
 
     let number = 6;
 
@@ -49,14 +54,15 @@ fn main() {
     }
 
     let condition = true;
+    // if是表达式，所以可以用来赋值，每个分支必须有相同类型的返回值
     let number = if condition {
         "5"
     } else {
         "6"
     };
-
     println!("The value of number is: {}", number);
 
+    // 循环，break退出循环
     loop {
         println!("loop again!");
         break
@@ -68,14 +74,16 @@ fn main() {
         counter += 1;
 
         if counter == 10 {
-            break counter * 2
+            // 可以通过break后的表达式返回loop跳出的结果
+            break counter * 2;
         }
     };
-
+    println!("loop break at: {}", result);
     assert_eq!(result, 20);
 
     let mut number = 3;
 
+    // while循环，在while后跟执行条件
     while number != 0 {
         println!("{}!", number);
 
@@ -87,16 +95,18 @@ fn main() {
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
 
+    // while方式比for慢，每次要检查条件
     while index < 5 {
         println!("the value is: {}", a[index]);
-
         index = index + 1;
     }
 
+    // for更安全，不会发生数组越界，如果修改了a也不会发生panic
     for element in a.iter() {
         println!("the value is: {}", element);
     }
 
+    // Range可以生成一定范围的数，rev用来反转序列
     for number in (1..4).rev() {
         println!("{}!", number);
     }
