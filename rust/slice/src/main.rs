@@ -28,6 +28,7 @@ fn main() {
     let slice = &s[0..len];
     let slice = &s[..];     // 和上面的相等
 
+    // s是&str类型，字符串字面值是不易变的，&str也是不易变的
     let s = "Hello, world!";
 
     let my_string = String::from("hello world");
@@ -41,6 +42,7 @@ fn main() {
     let word = first_word(my_string_literal);
 
     let a = [1, 2, 3, 4, 5];
+    // 这个切片是&[i32]类型，和字符串切片类似
     let slice = &a[1..3];
 }
 
@@ -70,6 +72,7 @@ fn main() {
 //     &s[..]
 // }
 
+// 入参也是&str，那么就可以传String转成的str，也可以传String的切片
 fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
 
