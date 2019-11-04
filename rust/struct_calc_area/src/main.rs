@@ -1,4 +1,5 @@
 fn main() {
+    // 这种方式没有将两个变量结合，他们之间是有关系的
     // let width1 = 30;
     // let height1 = 50;
     // println!(
@@ -6,12 +7,14 @@ fn main() {
     //     area(width1, height1)
     // );
 
+    // 元组没有名字
     // let rect1 = (30,50);
     // println!(
     //     "The area of the rectangle is {} square pixels.",
     //     area(rect1)
     // );
 
+    // 结构体表达了关系也有字段的描述
     let rect1 = Rectangle { width: 30, height: 50 };
     println!(
         "The area of the rectangle is {} square pixels.",
@@ -19,7 +22,9 @@ fn main() {
         rect1.area()
     );
 
-    println!("rect1 is {:#?}", rect1);
+    // println!("rect1 is {}", rect1);  // 这样是不行的，因为结构体打印格式没有固定下来
+    println!("rect1 is {:?}", rect1);   // 这种方式是以调试格式打印
+    println!("rect1 is {:#?}", rect1);  // 以json格式显示
 
 //////////////////////////////////////////////////
 
@@ -46,6 +51,7 @@ fn area(rectangle: &Rectangle) -> u32 {
     rectangle.width * rectangle.height
 }
 
+// 调试打印需要值此声明注解
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
