@@ -37,6 +37,7 @@ fn main() {
     // let sum = x + y;
 }
 
+// 枚举同时只有一种情况，这里使用正合适，不管是V4还是V6都是同种类型
 enum IpAddrKind {
     V4,
     V6,
