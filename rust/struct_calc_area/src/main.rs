@@ -19,7 +19,7 @@ fn main() {
     println!(
         "The area of the rectangle is {} square pixels.",
         // area(&rect1)
-        rect1.area()
+        rect1.area()    // 通过.符号调用，rust没有像Cpp一样的->，rust会自动引用或者解引用
     );
 
     // println!("rect1 is {}", rect1);  // 这样是不行的，因为结构体打印格式没有固定下来
@@ -58,7 +58,10 @@ struct Rectangle {
     height: u32,
 }
 
+// 使用impl定义函数，可以将函数分开写在多个impl中
 impl Rectangle {
+    // 方法也用fn定义，第一个参数往往是self，表示调用他的实例，使用&来borrow，如果想改变值，可以定义为&mut self
+    // 一般不使用self，原实例调用方法后就会被move
     fn area(&self) -> u32 {
         self.width * self.height
     }
@@ -67,6 +70,7 @@ impl Rectangle {
         self.width > other.width && self.height > other.height
     }
 
+    // 没有self的调用时用::，叫关联函数
     fn square(size: u32) -> Rectangle {
         Rectangle { width: size, height: size }
     }
