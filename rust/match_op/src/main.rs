@@ -1,3 +1,4 @@
+// match可以匹配各种类型模式
 fn main() {
     let penny = Coin::Penny;
     println!("coin value is {}", value_in_cents(penny));
@@ -59,12 +60,12 @@ enum Coin {
 }
 
 fn value_in_cents(coin: Coin) -> u8 {
-    match coin {
-        Coin::Penny => {
+    match coin {    // match的是coin类型，匹配的时候依次进行，匹配上的话会执行=>右侧的代码，每个分支右侧是表达式
+        Coin::Penny => {    // 简单代码可以用一行，多行的话需要用大括号
             println!("Lucky penny!");
             1
         }
-        Coin::Nickel => 5,
+        Coin::Nickel => 5,  // 每个匹配分支都由“模式=>执行内容”构成，分支之间用,分隔
         Coin::Dime => 10,
         Coin::Quarter(state) => {
             println!("State quarter from {:?}!", state);
