@@ -1,0 +1,10 @@
+- name: install mysql-server package
+  yum: name=mysql-server state=latest
+- name: install configuration file
+  copy: src=my.cnf dest=/etc/my.cnf
+  tags:
+  - conf
+  notify:
+  - restart mysqld
+- name:
+  service: name=mysqld enabled=true state=started

@@ -1,0 +1,8 @@
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: make dir
+      shell: 
+        echo "hello world" > hello.txt
+      args:
+        chdir: /opt/xxx

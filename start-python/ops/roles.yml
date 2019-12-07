@@ -1,0 +1,15 @@
+hosts: httpd
+role:
+- websrvs
+hosts: php
+role:
+- phpappsrvs
+        
+hosts: mysql
+role:
+- dbsrvs
+        
+hosts: allserver
+role:
+- websrvs
+- phpappsrvs

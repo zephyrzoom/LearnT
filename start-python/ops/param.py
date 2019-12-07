@@ -1,0 +1,10 @@
+import paramiko
+ssh=paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect("192.168.43.55",username="zeek",password='zoom')
+stdin,stdout,stderr=ssh.exec_command("sudo -k netstat -tnlp",get_pty=True)
+stdin.write('zoom\n')
+stdin.flush()
+#print(dir(stdout))
+data=stdout.read(65535).decode()
+print(data)
