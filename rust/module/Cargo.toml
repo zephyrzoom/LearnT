@@ -5,4 +5,6 @@ authors = ["707 <707472783@qq.com>"]
 edition = "2018"
 
 [dependencies]
-rand = "0.6.5"
+
+# 这个文件没有关于main.rs的说明，默认就会从该文件开始构建，如果创建lib.rs文件，则说明该crate是library。
+# main.rs和lib.rs都是crate的根文件，Cargo会把根文件提供给rustc来构建library或binary
