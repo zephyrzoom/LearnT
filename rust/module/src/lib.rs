@@ -36,6 +36,15 @@ pub fn eat_at_restaurant() {    // 和front_of_house是兄弟关系，所以可�
     front_of_house::hosting::add_to_waitlist();
 }
 
+use crate::front_of_house::hosting; // 可以用use一次引入到作用域中，不用每次都写全部是绝对path或相对path。use相对于创建了一个超链接，在当前目录可以使用
+pub use front_of_house::hosting // 也可以用这种相对路径引入。默认引入的模块是私有的，可以use前加pub进行re-export
+pub fn eat_at_restaurant() {
+    // 引入函数时，通常引入他的父级，明确表明他的归属；其他类型就不需要
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+}
+
 fn serve_order() {}
 
 mod back_of_house {
@@ -83,6 +92,47 @@ mod back_of_house {
 }
 
 pub fn eat_at_restaurant() {
-    let order1 = back_of_house::Appetizer::Soup;
+    let order1 = back_of_house::Appetizer::Soup;    // 枚举类型通常要直接访问其字段的
     let order2 = back_of_house::Appetizer::Salad;
+}
+
+// 这里就不应该直接引入两个Result，会导致无法区分，所以要引入他们的父级模块
+use std::fmt;
+use std::io;
+
+fn function1() -> fmt::Result {
+    // --snip--
+    Ok(())
+}
+
+fn function2() -> io::Result<()> {
+    // --snip--
+    Ok(())
+}
+
+
+
+// 还有方法，可以引入两个Result，就是用as定义一个别名
+use std::fmt::Result;
+use std::io::Result as IoResult;
+
+fn function1() -> Result {
+    // --snip--
+    Ok(())
+}
+
+fn function2() -> IoResult<()> {
+    // --snip--
+    Ok(())
+}
+
+// 分开放置在多个文件，front_of_house中的内容可以空出来，告诉编译器从同名的文件中去找具体的定义
+mod front_of_house;
+
+pub use crate::front_of_house::hosting;
+
+pub fn eat_at_restaurant() {
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
 }
