@@ -1,0 +1,12 @@
+[package]
+name = "errors"
+version = "0.1.0"
+authors = ["707 <707472783@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.release]
+panic = 'abort' # 遇到bug时通常程序会释放堆栈数据再退出，在此设置后程序会直接退出，内存释放交给操作系统完成
