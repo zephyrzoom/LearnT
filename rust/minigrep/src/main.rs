@@ -11,13 +11,19 @@ use std::process;
 use minigrep::Config;
 
 fn main() {
-    let args: Vec<String> = env::args().collect(); // 接收命令行参数
+    // let args: Vec<String> = env::args().collect(); // 接收命令行参数
 
     // let query = &args[1];
     // let filename = &args[2];
 
     // let (query, filename) = parse_config(&args);
-    let config = Config::new(&args).unwrap_or_else(|err| {
+    // let config = Config::new(&args).unwrap_or_else(|err| {
+    //     // 闭包，就是匿名函数
+    //     eprintln!("Problem parsing arguments: {}", err);    // 标准错误打印，错误信息会打印在终端，正确信息才会在文件中
+    //     process::exit(1); // 终止程序并返回错误码
+    // });
+
+    let config = Config::new(env::args()).unwrap_or_else(|err| {    // args()返回的是iterator
         // 闭包，就是匿名函数
         eprintln!("Problem parsing arguments: {}", err);    // 标准错误打印，错误信息会打印在终端，正确信息才会在文件中
         process::exit(1); // 终止程序并返回错误码
