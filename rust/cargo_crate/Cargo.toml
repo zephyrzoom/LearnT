@@ -1,0 +1,21 @@
+# dev profile配置用在cargo build
+# release profile配置用于cargo build --release
+# 没有设置[profile.*]配置时，会使用默认的profile
+# 在crates.io发布自己的包
+
+[package]
+name = "cargo-zzq"  # 发布的名字，要和crate.io上的不一样才行，执行cargo publish发布
+version = "0.1.0"
+authors = ["707 <707472783@qq.com>"]
+edition = "2018"
+license = "MIT" # 发布时需要指出证书，可以声明多个证书MIT OR Apache-2.0
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.dev]
+opt-level = 0   # 优化级别，范围是0-3,0优化最少，一般在开发模式使用
+
+[profile.release]
+opt-level = 3   # 优化3级，默认release也是3级，会使代码运行更快
