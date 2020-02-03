@@ -20,7 +20,7 @@
 ///
 /// ```
 /// let arg = 5;
-/// let answer = cargo::add_one(arg);
+/// let answer = cargo_zzq::add_one(arg);
 ///
 /// assert_eq!(6, answer);
 /// ```

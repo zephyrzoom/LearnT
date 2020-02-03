@@ -1,0 +1,11 @@
+[package]
+name = "adder"
+version = "0.1.0"
+authors = ["707 <707472783@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+add-on = { path = "../add-on" } # 依赖于另一个lib
+rand = "0.5.0"

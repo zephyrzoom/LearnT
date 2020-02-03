@@ -1,0 +1,11 @@
+# 可以用workspace包含多个crate，不要添加package配置项
+# 执行cargo build构建生成的目标文件在父级target目录中，子集crate不会有，为了方便共享
+# Cargo.lock文件只在根目录有，子路径没有，也就是不同crate添加的依赖是共享的，但是必须在自己的crate中添加依赖才能有，只会下载一份
+# 发布crate的时候要在不同crate目录执行cargo publish，不能一次发布多个
+
+[workspace]
+
+members = [
+    "adder",
+    "add-on",
+]

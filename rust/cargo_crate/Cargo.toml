@@ -1,14 +1,18 @@
 # dev profile配置用在cargo build
 # release profile配置用于cargo build --release
 # 没有设置[profile.*]配置时，会使用默认的profile
-# 在crates.io发布自己的包
+# 在crates.io发布自己的包，发布之后会永久存在，无法删除，但是可以追加新版本
+# 虽然发布的不能删除，但是可以限制新人使用，使用cargo yank --vers 1.0.1和cargo yank --vers 1.0.1 --undo
+# cargo install可以用来安装二进制库，会默认放在~/.cargo/bin中
+# 如果path中有命令叫cargo-something，那么就可以这样用：cargo something
 
 [package]
-name = "cargo-zzq"  # 发布的名字，要和crate.io上的不一样才行，执行cargo publish发布
+name = "cargo-zzq"  # 发布的名字，要和crate.io上的不一样才行，执行cargo publish发布。
 version = "0.1.0"
 authors = ["707 <707472783@qq.com>"]
 edition = "2018"
 license = "MIT" # 发布时需要指出证书，可以声明多个证书MIT OR Apache-2.0
+description = "我发布的测试项目"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
