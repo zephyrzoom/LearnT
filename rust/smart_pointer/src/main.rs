@@ -21,6 +21,21 @@
  * 第三条只能mut转immutable，因为mut引用一定是唯一的引用，若有immutable转mut则，不能保证唯一，转换过程中不会检查引用个数
  * 
  * Rc<T>就是reference count，在堆中分配的数据，给多个部分使用，不知道谁用到最后，这种情况就要用Rc<T>
+ * 
+ * RefCell使用了内部易变的设计模式，可以在有不易变引用的情况下易变数据，在数据结构内部使用unsafe代码来折中borrow规则，borrow规则会在运行时保证
+ * RefCell只有单所有权
+ * borrow规则是这样两条：
+ * 1. 可以有一个易变引用或者多个不易变引用
+ * 2. 引用必须是有效的
+ * Box<T>是在编译期保证borrow规则的，而RefCell是在运行时
+ * 编译器的静态分析能力是有限的，RefCell就可以在用户确定可以遵循borrow规则而编译器无法确定时使用
+ * RefCell和Rc都是在单线程使用的
+ * ReCell会在运行期检查borrow规则，不符合会panic
+ * 智能指针的选择：
+ * 1. Rc允许有多所有者，Box和RefCell都是单所有者
+ * 2. Box允许在编译期使用变异或不易变的borrow，Rc允许在编译期使用不易变的borrow，RefCell在运行时允许不易变或易变borrow
+ * 3. RefCell允许在运行时易变借用，你可以在RefCell是不易变时，在内部改变值
+ * 
  */
 
 use crate::List::{Cons, Nil};
@@ -101,6 +116,12 @@ fn main() {
         println!("count after creating c = {}", Rc::strong_count(&a));
     }   // 作用于结束引用会减少一次，Rc实现了Drop trait，会自动调用来减少引用次数
     println!("count after c goes out of scope = {}", Rc::strong_count(&a)); // Rc只能用在immutable，如果用于mut违反borrow规则，也会造成数据竞争
+
+    // 这样是不行的
+    let x = 5;
+    let y = &mut x;
+
+    // 
 }
 
 enum List {
@@ -150,4 +171,175 @@ impl Drop for CustomSmartPointer {
 enum List {
     Cons(i32, Rc<List>),
     Nil,
+}
+
+
+#[derive(Debug)]
+enum List {
+    // 使用Rc和RefCell可以让链表的多个引用都可以改变指向的值
+    Cons(Rc<RefCell<i32>>, Rc<List>),
+    Nil,
+}
+
+use crate::List::{Cons, Nil};
+use std::rc::Rc;
+use std::cell::RefCell;
+
+fn main() {
+    let value = Rc::new(RefCell::new(5));   // value拥有5的所有权
+    // clone可以不转移所有权情况下获得所有权
+    let a = Rc::new(Cons(Rc::clone(&value), Rc::new(Nil)));
+    // b和c都指向a，有a的所有权
+    let b = Cons(Rc::new(RefCell::new(6)), Rc::clone(&a));
+    let c = Cons(Rc::new(RefCell::new(10)), Rc::clone(&a));
+    // value自动解引用获得RefCell，再borrow_mut获得RefMut，最后*来解引用RefMut引用修改值
+    *value.borrow_mut() += 10;
+
+    println!("a after = {:?}", a);
+    println!("b after = {:?}", b);
+    println!("c after = {:?}", c);
+}
+
+// rust允许使用Rc和RefCell能够造成内存泄露
+use std::rc::Rc;
+use std::cell::RefCell;
+use crate::List::{Cons, Nil};
+
+#[derive(Debug)]
+enum List {
+    Cons(i32, RefCell<Rc<List>>),
+    Nil,
+}
+
+impl List {
+    fn tail(&self) -> Option<&RefCell<Rc<List>>> {
+        match self {
+            Cons(_, item) => Some(item),
+            Nil => None,
+        }
+    }
+}
+
+// 定义循环引用，b指向a，a再指向b
+fn main() {
+    let a = Rc::new(Cons(5, RefCell::new(Rc::new(Nil))));
+
+    println!("a initial rc count = {}", Rc::strong_count(&a));
+    println!("a next item = {:?}", a.tail());
+    // b指向a
+    let b = Rc::new(Cons(10, RefCell::new(Rc::clone(&a))));
+
+    println!("a rc count after b creation = {}", Rc::strong_count(&a));
+    println!("b initial rc count = {}", Rc::strong_count(&b));
+    println!("b next item = {:?}", b.tail());
+
+    // a再指向b，a.tail拿到RefCell<Rc<List>>
+    if let Some(link) = a.tail() {
+        *link.borrow_mut() = Rc::clone(&b);
+    }
+
+    println!("b rc count after changing a = {}", Rc::strong_count(&b));
+    println!("a rc count after changing a = {}", Rc::strong_count(&a));
+
+    // 会导致栈溢出
+    // println!("a next item = {:?}", a.tail());
+}   // 最终内存不会得到释放，引用循环是逻辑错误，应该用其他手段避免
+
+/**
+ * 可以使用Weak<T>来避免引用循环
+ * Rc::clone增加strong_count，Rc::downgrade增加weak_count，会得到一个Weak<T>智能指针，weak_count不为0时也可以释放内存
+ * Weak引用不会表达所有权的关系，不会引起引用循环，强引用为0时就会破坏循环
+ * Weak引用不知道自己是不是有效的，所以要调用upgrade来返回Option<Rc<T>>来判断
+ */
+// 构造一个树型结构，这种结构只能知道父节点的子节点，而不知道子节点的父节点是谁
+#[derive(Debug)]
+struct Node {
+    value: i32,
+    children: RefCell<Vec<Rc<Node>>>,
+}
+fn main() {
+    // 叶节点
+    let leaf = Rc::new(Node {
+        value: 3,
+        children: RefCell::new(vec![]),
+    });
+
+    let branch = Rc::new(Node {
+        value: 5,
+        children: RefCell::new(vec![Rc::clone(&leaf)]), // 指向叶节点
+    });
+}
+
+use std::rc::{Rc, Weak};
+use std::cell::RefCell;
+// 父节点删除子节点应该一起删除，子节点删除父节点并不删除，这就是Weak引用。仅仅指向而不拥有
+#[derive(Debug)]
+struct Node {
+    value: i32,
+    parent: RefCell<Weak<Node>>,    // 为了子节点能够知道父节点，需要这个属性，但是不用Rc，Rc会造成循环引用
+    children: RefCell<Vec<Rc<Node>>>,
+}
+fn main() {
+    let leaf = Rc::new(Node {
+        value: 3,
+        parent: RefCell::new(Weak::new()),  // 初始化为空的
+        children: RefCell::new(vec![]),
+    });
+
+    println!("leaf parent = {:?}", leaf.parent.borrow().upgrade()); // none
+
+    let branch = Rc::new(Node {
+        value: 5,
+        parent: RefCell::new(Weak::new()),
+        children: RefCell::new(vec![Rc::clone(&leaf)]),
+    });
+
+    // 用downgrade建立一个弱引用
+    *leaf.parent.borrow_mut() = Rc::downgrade(&branch);
+
+    println!("leaf parent = {:?}", leaf.parent.borrow().upgrade()); // Some变体
+}
+
+// 区分strong_count和weak_count
+fn main() {
+    let leaf = Rc::new(Node {
+        value: 3,
+        parent: RefCell::new(Weak::new()),
+        children: RefCell::new(vec![]),
+    });
+
+    println!(
+        "leaf strong = {}, weak = {}",
+        Rc::strong_count(&leaf),    // 1：leaf
+        Rc::weak_count(&leaf),  // 0
+    );
+
+    {
+        let branch = Rc::new(Node {
+            value: 5,
+            parent: RefCell::new(Weak::new()),
+            children: RefCell::new(vec![Rc::clone(&leaf)]),
+        });
+
+        *leaf.parent.borrow_mut() = Rc::downgrade(&branch);
+
+        println!(
+            "branch strong = {}, weak = {}",
+            Rc::strong_count(&branch),  // 1：branch
+            Rc::weak_count(&branch),    // 1：leaf
+        );
+
+        println!(
+            "leaf strong = {}, weak = {}",
+            Rc::strong_count(&leaf),    // 2：leaf、branch
+            Rc::weak_count(&leaf),  // 0
+        );
+    }   // branch到作用域结束，strong_count被置0，leaf变量对branch的弱引用不会影响到它的释放。这时leaf的强引用变为1
+
+    println!("leaf parent = {:?}", leaf.parent.borrow().upgrade());
+    println!(
+        "leaf strong = {}, weak = {}",
+        Rc::strong_count(&leaf),
+        Rc::weak_count(&leaf),
+    );
 }
