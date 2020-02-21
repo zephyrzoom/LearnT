@@ -76,10 +76,41 @@ _main PROC
     mov ebp, esp
     push OFFSET $SG3830
     call _printf
-    add esp, 4  ; 移动四个字节，相当于pop操作，但是不会用寄存器返回值，也有编译器使用pop ecx指令的
-    xor eax, eax    // 置0操作，他的操作码比mov eax, 0短，有的编译器也会用sub eax, eax
+    add esp, 4  ; 移动四个字节，相当于pop操作，但是不会用寄存器返回值，也有编译器使用pop ecx指令的。print执行完后esp要回收，32位所以是4字节
+    xor eax, eax    // 置0操作，他的操作码比mov eax, 0短，有的编译器也会用sub eax, eax。eax放返回值
     pop ebp
     ret 0
 _main ENDP
 _TEXT ENDS
+```
+
+### 函数序言和函数尾声
+
+序言形式
+
+```asm
+push ebp    ; 先保存旧的ebp
+mov ebp, esp    ; 再把ebp移动到新的位置，esp在最上面
+sub esp, X  ; 分配局部变量
+```
+
+尾声形式
+
+```asm
+mov esp, ebp
+pop ebp
+ret 0
+```
+
+### 再看空函数
+
+加入了函数调用的序言和尾声后，不过其实只有ret是有效的，编译器优化时，会将他们删掉。
+
+```asm
+f:
+    push rbp
+    mov rbp, rsp
+    nop
+    pop rbp
+    ret
 ```
