@@ -6,7 +6,9 @@ fn analyze_slice(slice: &[i32]) {
 }
 
 fn main() {
+    // [类型; 大小]
     let xs: [i32; 5] = [1,2,3,4,5];
+    // 500个0
     let ys: [i32; 500] = [0; 500];
     println!("first element of array: {}", xs[0]);
     println!("second element of the array: {}", xs[1]);
